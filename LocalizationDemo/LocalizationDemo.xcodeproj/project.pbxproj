@@ -12,7 +12,18 @@
 		47EA277F1F8D5D7A00079D70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EA277D1F8D5D7A00079D70 /* Main.storyboard */; };
 		47EA27811F8D5D7A00079D70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47EA27801F8D5D7A00079D70 /* Assets.xcassets */; };
 		47EA27841F8D5D7A00079D70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EA27821F8D5D7A00079D70 /* LaunchScreen.storyboard */; };
+		47EA27B01F8D646D00079D70 /* LocalizationModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EA27AF1F8D645800079D70 /* LocalizationModule.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47EA27AE1F8D645800079D70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EA27AA1F8D645800079D70 /* LocalizationModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 47EA27951F8D5E4700079D70;
+			remoteInfo = LocalizationModule;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		47EA27761F8D5D7A00079D70 /* LocalizationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +33,7 @@
 		47EA27801F8D5D7A00079D70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47EA27831F8D5D7A00079D70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47EA27851F8D5D7A00079D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47EA27AA1F8D645800079D70 /* LocalizationModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LocalizationModule.xcodeproj; path = ../Frameworks/LocalizationModule.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47EA27B01F8D646D00079D70 /* LocalizationModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 			children = (
 				47EA27781F8D5D7A00079D70 /* LocalizationDemo */,
 				47EA27771F8D5D7A00079D70 /* Products */,
+				47EA27A91F8D645800079D70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +76,22 @@
 				47EA27851F8D5D7A00079D70 /* Info.plist */,
 			);
 			path = LocalizationDemo;
+			sourceTree = "<group>";
+		};
+		47EA27A91F8D645800079D70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47EA27AA1F8D645800079D70 /* LocalizationModule.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47EA27AB1F8D645800079D70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47EA27AF1F8D645800079D70 /* LocalizationModule.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,12 +141,28 @@
 			mainGroup = 47EA276D1F8D5D7A00079D70;
 			productRefGroup = 47EA27771F8D5D7A00079D70 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 47EA27AB1F8D645800079D70 /* Products */;
+					ProjectRef = 47EA27AA1F8D645800079D70 /* LocalizationModule.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				47EA27751F8D5D7A00079D70 /* LocalizationDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		47EA27AF1F8D645800079D70 /* LocalizationModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LocalizationModule.framework;
+			remoteRef = 47EA27AE1F8D645800079D70 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		47EA27741F8D5D7A00079D70 /* Resources */ = {

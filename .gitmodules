@@ -1,0 +1,3 @@
+[submodule "Frameworks"]
+	path = Frameworks
+	url = https://github.com/jamescierge/LocalizationModule.git
