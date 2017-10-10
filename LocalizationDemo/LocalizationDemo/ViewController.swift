@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalizationModule
 
 class ViewController: UIViewController {
 
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        textLabel.text = "Hello, World"
     }
 
     override func didReceiveMemoryWarning() {
