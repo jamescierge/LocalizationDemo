@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        textLabel.text = "Hello, World"
+        textLabel.text = "Hello, World".localized
     }
 
     override func didReceiveMemoryWarning() {
