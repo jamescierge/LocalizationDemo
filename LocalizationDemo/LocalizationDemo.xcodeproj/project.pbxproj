@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		475A7A881F8E673700A5EB46 /* LocalizationModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EA27B81F8D66E900079D70 /* LocalizationModule.framework */; };
+		475A7A891F8E673700A5EB46 /* LocalizationModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 47EA27B81F8D66E900079D70 /* LocalizationModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		47EA277A1F8D5D7A00079D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA27791F8D5D7A00079D70 /* AppDelegate.swift */; };
 		47EA277C1F8D5D7A00079D70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA277B1F8D5D7A00079D70 /* ViewController.swift */; };
 		47EA277F1F8D5D7A00079D70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EA277D1F8D5D7A00079D70 /* Main.storyboard */; };
 		47EA27811F8D5D7A00079D70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47EA27801F8D5D7A00079D70 /* Assets.xcassets */; };
 		47EA27841F8D5D7A00079D70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EA27821F8D5D7A00079D70 /* LaunchScreen.storyboard */; };
-		47EA27B91F8D66F400079D70 /* LocalizationModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EA27B81F8D66E900079D70 /* LocalizationModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		475A7A8A1F8E673700A5EB46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EA27B31F8D66E900079D70 /* LocalizationModule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 47EA27941F8D5E4700079D70;
+			remoteInfo = LocalizationModule;
+		};
 		47EA27B71F8D66E900079D70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 47EA27B31F8D66E900079D70 /* LocalizationModule.xcodeproj */;
@@ -24,6 +32,20 @@
 			remoteInfo = LocalizationModule;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		475A7A8C1F8E673700A5EB46 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				475A7A891F8E673700A5EB46 /* LocalizationModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		47EA27761F8D5D7A00079D70 /* LocalizationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47EA27B91F8D66F400079D70 /* LocalizationModule.framework in Frameworks */,
+				475A7A881F8E673700A5EB46 /* LocalizationModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,10 +126,12 @@
 				47EA27721F8D5D7A00079D70 /* Sources */,
 				47EA27731F8D5D7A00079D70 /* Frameworks */,
 				47EA27741F8D5D7A00079D70 /* Resources */,
+				475A7A8C1F8E673700A5EB46 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				475A7A8B1F8E673700A5EB46 /* PBXTargetDependency */,
 			);
 			name = LocalizationDemo;
 			productName = LocalizationDemo;
@@ -188,6 +212,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		475A7A8B1F8E673700A5EB46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LocalizationModule;
+			targetProxy = 475A7A8A1F8E673700A5EB46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		47EA277D1F8D5D7A00079D70 /* Main.storyboard */ = {
@@ -319,6 +351,7 @@
 		47EA27891F8D5D7A00079D70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VTHXSCD8X;
@@ -335,6 +368,7 @@
 		47EA278A1F8D5D7A00079D70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VTHXSCD8X;
